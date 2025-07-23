@@ -16,6 +16,7 @@ body{
     padding: 20px 10px;
     background: #fff;
     border-radius: 20px;
+    margin-bottom: 20px;
     display: flex;
 }
 input{
@@ -38,4 +39,51 @@ input{
 #add-task:hover{
     background-color: green;
     color: white;
+}
+.task{
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow:  0 0 3px;
+    padding: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.task li{
+    list-style: none;
+    flex:  4;
+    padding: 5px;
+    font-size: 1.3rem;
+    margin: 10px;
+}
+.task button{
+    flex: 1;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+}
+.task .checktask{
+    color: orange;
+    margin-right: 5px;
+    border: solid 2px orange;
+    font-size: 1.5rem;
+}
+.task .checktask:hover{
+    color: red;
+    border: solid 2px red;
+    font-size: 1.3rem;
+}
+.task .checktask:hover{
+    background-color: orange;
+    color: #fff;
+}
+.task .deletetask{
+    color: red;
+    border: solid 2px red;
+    font-size: 1.3rem;
+}
+.task .deletetask:hover{
+    background-color: red;
+    color: #fff;
 }
